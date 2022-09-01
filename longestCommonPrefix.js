@@ -5,7 +5,7 @@ var longestCommonPrefix = function (strs) {
         let shortestString = strs.reduce(function (a, b) {
             return a.length <= b.length ? a : b;
         })
-        if(shortestString.length != 0){
+        if(shortestString.length != 0){ 
             for (let i = 1; i <= shortestString.length; i++) {
                 let status;
                 let search = shortestString.substring(0, i)
